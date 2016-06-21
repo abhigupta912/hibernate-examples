@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?annotated version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
@@ -9,7 +9,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.h2.Driver</property>
-        <property name="connection.url">jdbc:h2:/tmp/database/test1</property>
+        <property name="connection.url">jdbc:h2:/tmp/database/test2</property>
         <property name="connection.username">sa</property>
         <property name="connection.password"/>
 
@@ -28,7 +28,7 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">create</property>
 
-        <mapping resource="event.hbm.xml"/>
+        <mapping class="annotated.model.Event"/>
 
     </session-factory>
 
