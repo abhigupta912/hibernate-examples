@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="xml.model">
+
+    <class name="Event" table="Events">
+        <id name="name" column="Name"/>
+        <property name="triggeredAt" type="timestamp" column="TriggeredAt"/>
+        <property name="expireAt" type="timestamp" column="ExpireAt"/>
+    </class>
+
+</hibernate-mapping>
